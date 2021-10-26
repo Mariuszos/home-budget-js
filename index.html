@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- LOGO -->
+    <section class="logo">
+      <div class="my-logo">
+        <img
+          class="logo-img"
+          src="/Images/bitcoin-g5d396a63b_1280.png"
+          alt="bitcoin"
+        />
+      </div>
+    </section>
+
+    <!-- MOJE SALDO -->
+    <section class="my-cash">
+      <div class="cash-title"></div>
+    </section>
+
+    <!-- Incomes & expenses -->
+
+    <section class="in-out">
+      <div class="incomes">
+        <div class="incomes-cont">
+          <h1>PRZYCHODY</h1>
+          <input type="text" class="title" placeholder="Rodzaj przychodu" />
+          <input type="number" class="quote" placeholder="Kwota" />
+          <button class="add">Dodaj</button>
+        </div>
+
+        <div class="incomes-sum">
+          <div class="incomes-list">
+            <ul>
+              <li class="inBox">
+                <button class="edit">Edycja</button>
+                <button class="delete">Usuń</button>
+              </li>
+            </ul>
+          </div>
+          <h2 class="sum">Suma przychodów:</h2>
+        </div>
+      </div>
+
+      <div class="expenses">
+        <div class="expenses-cont">
+          <h1>WYDATKI</h1>
+          <input type="text" class="title" placeholder="Rodzaj wydatku" />
+          <input type="number" class="quote" placeholder="Kwota" />
+          <button class="add">Dodaj</button>
+        </div>
+
+        <div class="expenses-sum">
+          <div class="expenses-list">
+            <ul id="myList">
+              <!-- <li class="expBox"> -->
+              <!-- <button class="edit">Edycja</button> -->
+              <!-- <button class="delete">Usuń</button> -->
+              <!-- </li> -->
+            </ul>
+          </div>
+          <h2 class="sum">Suma wydatków:</h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

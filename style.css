@@ -1,0 +1,120 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Logo */
+.my-logo {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  transition: 0.1s;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.my-cash {
+  width: 450px;
+  min-height: 40px;
+  line-height: 40px;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+
+/* Income & Expenses */
+
+.in-out {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: 90vw;
+  background-color: #888;
+  text-align: center;
+  border: 3px solid goldenrod;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.incomes,
+.expenses {
+  width: 50%;
+}
+.incomes {
+  border-right: 1px solid #000;
+}
+
+.expenses {
+  border-left: 1px solid #000;
+}
+
+.incomes-cont,
+.expenses-cont {
+  margin-bottom: 10px;
+}
+
+.title {
+  width: 45%;
+}
+.quote {
+  width: 25%;
+}
+
+.add {
+  width: 15%;
+  height: 20px;
+  border: 1px solid black;
+  /* font-size: 18px; */
+}
+.incomes button {
+  background-color: rgb(70, 245, 27);
+}
+.expenses button {
+  background-color: rgb(240, 20, 20);
+}
+
+/* LISTA */
+
+.incomes-sum,
+.expenses-sum {
+  border-top: 2px solid #000;
+  background-color: #888;
+  color: black;
+}
+
+ul {
+  text-align: left;
+}
+
+.incomes-list,
+.expenses-list {
+  height: 100px;
+  background-color: rgb(39, 199, 228);
+}
+h2 {
+  text-align: left;
+  text-align: bottom;
+  padding-left: 10px;
+}
+
+button.edit,
+button.delete {
+  background-color: rgb(40, 40, 219);
+  color: white;
+  border: 1px solid white;
+  font-weight: bold;
+}
