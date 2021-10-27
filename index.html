@@ -20,7 +20,7 @@
     </section>
 
     <!-- MOJE SALDO -->
-    <section class="my-cash">
+    <section id="myCash" class="my-cash">
       <div class="cash-title"></div>
     </section>
 
@@ -30,18 +30,28 @@
       <div class="incomes">
         <div class="incomes-cont">
           <h1>PRZYCHODY</h1>
-          <input type="text" class="title" placeholder="Rodzaj przychodu" />
-          <input type="number" class="quote" placeholder="Kwota" />
+          <input
+            id="addIncomesName"
+            type="text"
+            class="title"
+            placeholder="Rodzaj przychodu"
+          />
+          <input
+            id="addIncomesValue"
+            type="number"
+            class="quote"
+            placeholder="Kwota"
+          />
           <button class="add">Dodaj</button>
         </div>
 
         <div class="incomes-sum">
           <div class="incomes-list">
             <ul>
-              <li class="inBox">
+              <!-- <li class="inBox">
                 <button class="edit">Edycja</button>
                 <button class="delete">Usuń</button>
-              </li>
+              </li> -->
             </ul>
           </div>
           <h2 class="sum">Suma przychodów:</h2>
@@ -51,8 +61,18 @@
       <div class="expenses">
         <div class="expenses-cont">
           <h1>WYDATKI</h1>
-          <input type="text" class="title" placeholder="Rodzaj wydatku" />
-          <input type="number" class="quote" placeholder="Kwota" />
+          <input
+            id="addExpensesName"
+            type="text"
+            class="title"
+            placeholder="Rodzaj wydatku"
+          />
+          <input
+            id="addExpensesValue"
+            type="number"
+            class="quote"
+            placeholder="Kwota"
+          />
           <button class="add">Dodaj</button>
         </div>
 
