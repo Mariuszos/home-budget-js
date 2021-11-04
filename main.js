@@ -1,20 +1,28 @@
-const incomesName = document.getElementById("#addIncomesName");
+const incomesName = document.querySelector("#addIncomesName");
 const incomesValue = document.getElementById("#addIncomesValue");
 const expensesName = document.getElementById("#addExpensesName");
 const expensesValue = document.getElementById("#addExpensesValue");
 
-const sumIncomes = 0;
-for (let i = 0; i < incomesValue.clientHeight; i++) {
-  return (sumIncomes = sumIncomes + incomesValue[i]);
-}
+const btnIncomes = document.querySelector("#addIncomes");
+btnIncomes.addEventListener("click", (e) => {
+  if (incomesName.value && incomesValue.value) {
+  }
+});
 
-const sumExpenses = 0;
-for (let i = 0; i < expensesValue.clientHeight; i++) {
-  return (sumExpenses = sumExpenses + expensesValue[i]);
-}
+ulList.innerHTML += `<li>${incN}: ${incV}</li>`;
 
-const cashBalance = `${sumIncomes} - ${sumExpenses}`;
-document.getElementById(myCash).appendChild(cashBalance);
+// const sumIncomes = 0;
+// for (let i = 0; i < incomesValue.length; i++) {
+//   return (sumIncomes = sumIncomes + incomesValue[i]);
+// }
+
+// const sumExpenses = 0;
+// for (let i = 0; i < expensesValue.clientHeight; i++) {
+//   return (sumExpenses = sumExpenses + expensesValue[i]);
+// }
+
+// const cashBalance = `${sumIncomes} - ${sumExpenses}`;
+// document.getElementById(myCash).appendChild(cashBalance);
 
 // const btn = document.createElement("button");
 // btn.textContent = "Edytuj";
