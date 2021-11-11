@@ -1,95 +1,68 @@
 <!DOCTYPE html>
 <html lang="PL-pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- LOGO -->
-    <section class="logo">
-      <div class="my-logo">
-        <img
-          class="logo-img"
-          src="Images/bitcoin-g5d396a63b_1280.png"
-          alt="bitcoin"
-        />
-      </div>
-    </section>
 
-    <!-- MOJE SALDO -->
-    <section id="myCash" class="my-cash">
-      <div class="cash-title"></div>
-    </section>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Incomes & expenses -->
+<body>
+	<!-- LOGO -->
+	<section class="logo">
+		<div class="my-logo">
+			<img class="logo-img" src="Images/bitcoin-g5d396a63b_1280.png" alt="bitcoin" />
+		</div>
+	</section>
 
-    <section class="in-out">
-      <div class="incomes">
-        <div class="incomes-cont">
-          <h1>PRZYCHODY</h1>
-          <input
-            id="addIncomesName"
-            type="text"
-            class="title"
-            placeholder="Rodzaj przychodu"
-          />
-          <input
-            id="addIncomesValue"
-            type="number"
-            class="quote"
-            placeholder="Kwota"
-          />
-          <button id="addIncomes" class="add">Dodaj</button>
-        </div>
+	<!-- MOJE SALDO -->
+	<section id="myCash" class="my-cash">
+		<div class="cash-title"></div>
+	</section>
 
-        <div class="incomes-sum">
-          <div class="incomes-list">
-            <ul id="incomesList">
-              <!-- <li class="inBox">
-                <button class="edit">Edycja</button>
-                <button class="delete">Usuń</button>
-              </li> -->
-            </ul>
-          </div>
-          <h2 class="sum">Suma przychodów:</h2>
-        </div>
-      </div>
+	<!-- Incomes & expenses -->
 
-      <div class="expenses">
-        <div class="expenses-cont">
-          <h1>WYDATKI</h1>
-          <input
-            id="addExpensesName"
-            type="text"
-            class="title"
-            placeholder="Rodzaj wydatku"
-          />
-          <input
-            id="addExpensesValue"
-            type="number"
-            class="quote"
-            placeholder="Kwota"
-          />
-          <button class="add">Dodaj</button>
-        </div>
+	<section class="in-out">
+		<div class="incomes">
+			<form class="incomes-cont" id="incomesList-form" onsubmit="return false">
+				<h1>PRZYCHODY</h1>
+				<input id="addIncomeincomesValuesName" type="text" class="title" placeholder="Rodzaj przychodu" />
+				<input id="addIncomesValue" min="1" onkeypress="return event.charCode != 45" type="number" class="quote"
+					placeholder="Kwota" />
+				<button id="addIncomes" class="add">Dodaj</button>
+			</form>
 
-        <div class="expenses-sum">
-          <div class="expenses-list">
-            <ul id="myList">
-              <!-- <li class="expBox"> -->
-              <!-- <button class="edit">Edycja</button> -->
-              <!-- <button class="delete">Usuń</button> -->
-              <!-- </li> -->
-            </ul>
-          </div>
-          <h2 class="sum">Suma wydatków:</h2>
-        </div>
-      </div>
-    </section>
+			<div class="incomes-sum">
+				<div class="incomes-list">
+					<ol id="incomesList" data-function="incomes">
+					</ol>
+				</div>
+				<h2 class="sum sumIncomes" data-sum="incomes">Suma przychodów: <span>0</span> PLN</h2>
+			</div>
+		</div>
 
-    <script src="main.js"></script>
-  </body>
+		<div class="expenses">
+			<form class="expenses-cont" id="expensesList-form" onsubmit="return false">
+				<h1>WYDATKI</h1>
+				<input id="addExpensesName" type="text" class="title" placeholder="Rodzaj wydatku" />
+				<input id="addExpensesValue" min="1" onkeypress="return event.charCode != 45" type="number" class="quote"
+					placeholder="Kwota" />
+				<button id="addExpenses" class="add">Dodaj</button>
+			</form>
+
+			<div class="expenses-sum">
+				<div class="expenses-list">
+					<ol id="expensesList" data-function="expenses">
+					</ol>
+				</div>
+				<h2 class="sum sumExpenses" data-sum="expenses">Suma wydatków: <span>0</span> PLN</h2>
+			</div>
+		</div>
+	</section>
+
+	<script src="main.js" async></script>
+</body>
+
 </html>
